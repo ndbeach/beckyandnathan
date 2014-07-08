@@ -1,9 +1,6 @@
 @CHARSET "US-ASCII";
 
-h1 {
-	color: blue;
-}
-
-#content-wrapper {
+#header,
+#wrapper {
 	width: 90%;
 }

@@ -1,9 +1,10 @@
 @CHARSET "US-ASCII";
 
-h1 {
-	color: green;
+#header,
+#wrapper {
+	width: 100%;
 }
 
-#content-wrapper {
-	width: 95%;
+body {
+	background-image: none;
 }
