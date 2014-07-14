@@ -1,10 +1,47 @@
-@CHARSET "US-ASCII";
-
-#header,
+#header {
+	position: static;
+}
 #wrapper {
-	width: 100%;
+
 }
 
 body {
 	background-image: none;
+}
+
+ul#navlinks {
+	clear: both;
+	text-align: center;
+	margin: 0 -0.5em;
+}
+
+#wrapper {
+	padding: 1em 0.5em;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul#navlinks li {
+	width: 100%;
+}
+
+#splash {
+	margin: 0 -0.5em;
+	background-image: url(splash1.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 200px; /* TODO: Shrink the height of this splash image */
+}
+
+.desktop-only {
+	display: none;
+}
+
+/* EVENTS PAGE */
+
+#welcome-message {
+	font-size: 1.5em;
 }

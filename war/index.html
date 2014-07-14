@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <!--
 TODO:
-- Mobile site
-- Shrink file size of images
-- Shrink height of splash image
-- Add splash images to other pages
-- Hyperlink logo to home page
+- Mobile site: Create a short (200px tall) version of the splash image for the home page
+- Desktop site: Shrink height and file size of both background and splash images
 - Cause files not to need .html extension
-- 302 redirect to www subdomain
-- SSL 
+- Create favicon
+- SSL
 -->
 <html>
   <head>
@@ -16,50 +13,44 @@ TODO:
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pinyon+Script" />
     <link rel="stylesheet" type="text/css" href="assets/global.css" />
-    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="assets/mobile.css" />
-    <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="assets/desktop.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 700px)" href="assets/mobile.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 701px)" href="assets/desktop.css" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <script type="text/javascript">
-  /* COMMENTED OUT UNTIL LAUNCH
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-52498343-1', 'auto');
-  ga('send', 'pageview');
-  */
-  </script>
+    <script type="text/javascript" src="assets/script.js"></script>
   </head>
   <body>
   <div id="wrapper">
   <div id="header">
-  <h1>Becky&nbsp;&amp;&nbsp;Nathan</h1>
+  <h1><a href="/">Becky&nbsp;&amp;&nbsp;Nathan</a></h1>
   <ul id="navlinks">
-  <li class="selected" style="width: 5em;"><a href="index.html">Events</a></li>
-  <li style="width: 4.5em;"><a href="rsvp.html">RSVP</a></li>
-  <li style="width: 6em;"><a href="guest-information.html">Guest Info</a></li>
-  <li style="width: 6em;"><a href="registry.html">Registry</a></li>
+  <li class="selected" style="width: 4.5em;"><a href="/">Events</a></li>
+  <li style="width: 4em;"><a href="rsvp.html">RSVP</a></li>
+  <li style="width: 5.5em;"><a href="guest-information.html">Guest Info</a></li>
+  <li style="width: 5em;"><a href="registry.html">Registry</a></li>
   </ul>
   </div>
   <div id="content">
   <div id="splash"></div>
+  <p id="welcome-message">We're very excited to celebrate our marriage with you! <span style="white-space:nowrap;">&mdash;Becky &amp; Nathan</span></p>
   <h2>Wedding Events</h2>
-  <p>Welcome! We're really excited to celebrate our wedding with you!</p>
+  <h3>Ceremony</h3>
+  <p><a href="http://hopefellowshipchurch.org/" target="_blank">Hope Fellowship Church</a><br/>
+  <a href="https://www.google.com/maps/preview?q=16+Beech+St.,+Cambridge,+MA" target="_blank">16 Beech Street, Cambridge</a><br/>
+  Saturday, September 6, 2014 at 3:30pm</p>
+  <p>Please do <i>not</i> park in the church's parking lot, which is extremely small. Instead, please find street parking near the church. Most street parking near the church is metered on Saturdays and is limited to a maximum of two hours. Additionally, most street parking near the church requires a resident parking permit. We are working with the city to obtain a special exception so that wedding guests may park in permit-only parking spots. We'll update this page with more information once that is completed.</p>
+  <p>Hope Fellowship is a <a href="https://www.google.com/maps/dir/Porter+Square+Station,+1899+Massachusetts+Ave,+Cambridge,+MA+02140/Hope+Fellowship+Church,+16+Beech+St,+Cambridge,+MA+02140/@42.3897496,-71.1211957,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89e3773da539d88f:0x2821f993055fa2de!2m2!1d-71.119196!2d42.388405!1m5!1m1!1s0x89e3773d4a3911ed:0xfad2a268d65d8b7f!2m2!1d-71.119545!2d42.390887!3e2" target="_blank">5 minute walk</a> from the Porter Square Red Line subway station. Additionally, the <a href="http://www.mbta.com/schedules_and_maps/bus/routes/?route=96" target="_blank">96</a>, <a href="http://www.mbta.com/schedules_and_maps/bus/routes/?route=77" target="_blank">77</a>, <a href="http://www.mbta.com/schedules_and_maps/bus/routes/?route=83" target="_blank">83</a>, and <a href="http://www.mbta.com/schedules_and_maps/bus/routes/?route=87" target="_blank">87</a> bus routes all pass within a two minute walk from Hope Fellowship.</p>
+  <h3>Reception</h3>
+  <p><a href="http://www.nashawtuc.com/">Nashawtuc Country Club</a><br/>
+  <a href="https://www.google.com/maps/preview?q=1861+Sudbury+Rd%2C+Concord%2C+MA">1861 Sudbury Road, Concord</a><br />
+  Immediately following the ceremony (approximately 5pm)</p>
+  <p>There will be complementary shuttle service provided from Hope Fellowship Church to Nashawtuc Country Club and back to Hope after the reception. The shuttle departs Hope at 4:30pm and departs Nashawtuc at the conclusion of the reception. Please indicate in <a href="rsvp.html">your RSVP</a> whether you require a shuttle so we can plan accordingly.</p>
+  <p>Free parking is available to all guests at Nashawtuc Country Club.</p>
   <h3>Rehearsal Dinner</h3>
-  <p>September 5, 2014 at 6:30pm <a href="http://www.catalystrestaurant.com/">Catalyst Restaurant</a>. <a href="https://maps.google.com/maps?q=300+Technology+Square%2C+Cambridge%2C+MA">300 Technology Square, Cambridge, MA</a></p>
-  <p>Parking:</p>
-  <p>Public Transportation:</p>
-  <p>Dress:</p>
-  <h3>Wedding Ceremony</h3>
-  <p>3:30pm <a href="http://hopefellowshipchurch.org/">Hope Fellowship Church</a>. <a href="https://www.google.com/maps/preview?q=16+Beech+St.,+Cambridge,+MA">16 Beech St., Cambridge, MA</a></p>
-  <p>Parking: TODO: Include parking permit information. Request that people not park in the church itself.</p>
-  <p>Public Transportation:</p>
-  <p>Dress:</p>
-  <h3>Wedding Reception</h3>
-  <p>5pm <a href="http://www.nashawtuc.com/">Nashawtuc Country Club</a>. <a href="https://www.google.com/maps/preview?q=1861+Sudbury+Rd%2C+Concord%2C+MA">1861 Sudbury Rd, Concord, MA</a></p>
-  <p>There will be a shuttle service provided from Hope Fellowship Church to Nashawtuc Country Club and back to Hope after the reception. The shuttle departs Hope at 4:30pm and departs Nashawtuc at the conclusion of the reception.</p>
-  <p>Parking:</p>
+  <p><a href="http://www.catalystrestaurant.com/" target="_blank">Catalyst Restaurant</a><br/>
+  <a href="https://maps.google.com/maps?q=300+Technology+Square%2C+Cambridge%2C+MA" target="_blank">300 Technology Square, Cambridge</a><br/>
+  Friday, September 5, 2014 at 6:30pm</p>
+  <p>Complimentary (validated) parking is available in the <a href="http://en.parkopedia.com/parking/garage/technology_square_garage/02139/cambridge/" target="_blank">Technology Square Garage</a> behind the restaurant.</p>
+  <p>Catalyst Restaurant is a <a href="https://www.google.com/maps/dir/Kendall%2FMIT+Station/Catalyst,+300+Technology+Square,+Cambridge,+MA+02139/@42.3629465,-71.0910183,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89e370af454cadd1:0xed3f24407286838c!2m2!1d-71.086176!2d42.362491!1m5!1m1!1s0x89e370ac02472fcd:0x3f5a32a78e2c8d0a!2m2!1d-71.091569!2d42.363422!3e2" target="_blank">5 minute walk</a> from the Kendall/MIT Red Line subway station, the Kendall Hotel, and the Boston Cambridge Marriott. (We have <a href="guest-information.html">room blocks available</a> at both hotels.)</p>
   </div>
   </div>
   </body>

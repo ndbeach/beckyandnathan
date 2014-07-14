@@ -1,6 +1,51 @@
-@CHARSET "US-ASCII";
-
 #header,
 #wrapper {
 	width: 90%;
+	max-width: 50em;
+	min-width: 40em;
+}
+
+#header {
+	position: fixed;
+	padding: 1em 2em 1em 2em;
+	margin: 0 -2em;
+	text-align: right;
+	top: 0;
+	background-color: #fcfcfc;
+}
+
+#wrapper {
+	padding: 1em 2em;
+}
+
+
+h1 {
+	float: left;
+}
+
+ul#navlinks li {
+	width: 9em;
+}
+
+#content {
+	margin-top: 4em;
+}
+
+.mobile-only {
+	display: none;
+}
+
+/* EVENTS PAGE */
+
+#welcome-message {
+	font-size: 1.8em;
+}
+
+#splash {
+	margin: 0 -2em;
+	background-image: url(splash1.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 561px; /* TODO: Shrink the height of this splash image */
 }
