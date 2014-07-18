@@ -43,9 +43,9 @@ ul#navlinks li {
 
 #splash {
 	margin: 0 -2em;
-	background-image: url(splash1.jpg);
+	background-image: url(splash1-desktop.jpg);
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center top;
-	height: 561px; /* TODO: Shrink the height of this splash image */
+	height: 500px;
 }

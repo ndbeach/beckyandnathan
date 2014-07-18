@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/checkhotels</url>
+    <description>Check if desired hotels have any availability</description>
+    <schedule>every 60 minutes</schedule>
+  </cron>
+</cronentries>

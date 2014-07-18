@@ -79,6 +79,10 @@ ul#navlinks li a:hover {
 	clear: both;
 }
 
+.p-intro {
+	text-decoration: underline;
+}
+
 /* EVENTS PAGE */
 
 #welcome-message {
