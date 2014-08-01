@@ -44,7 +44,7 @@ public class HotelAvailabilityChecker extends HttpServlet {
 			c.set(2014, Calendar.SEPTEMBER, 9);
 			this.checkDate(c.getTime(), 5, false);
 
-			c.set(2014, Calendar.DECEMBER, 8);
+			c.set(2015, Calendar.JUNE, 8);
 			this.checkDate(c.getTime(), 5, true);
 			
 		} catch (MessagingException e) {
@@ -61,10 +61,10 @@ public class HotelAvailabilityChecker extends HttpServlet {
 			this.sendNotificationEmail("Bucuti", arrivalDate, numNights, !expectedAvailability);
 		}
 		
-		if (this.isMancheboAvailable(arrivalDate, numNights) != expectedAvailability) {
-			this.sendNotificationEmail("Manchebo Beach", arrivalDate,
-					numNights, !expectedAvailability);
-		}
+		//if (this.isMancheboAvailable(arrivalDate, numNights) != expectedAvailability) {
+		//	this.sendNotificationEmail("Manchebo Beach", arrivalDate,
+		//			numNights, !expectedAvailability);
+		//}
 	}
 
 	private boolean isMancheboAvailable(Date arrivalDate, int numNights)
